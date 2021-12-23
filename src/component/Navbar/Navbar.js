@@ -17,17 +17,17 @@ export default function Navbar() {
                 Covid-19 Tracker
             </div>
             <div className={(parsed.page == 'home' || !parsed.page) ? style.linkActive : style.link}
-                 onClick={() => window.location.href = '/?page=home'}>
+                 onClick={() => window.location.href = '?page=home'}>
                 <FontAwesomeIcon icon={faHome} /> 
                 <div className={style.linkContent}>Dashboard</div>
             </div>
             <div className={parsed.page == 'province' ? style.linkActive : style.link}
-                 onClick={() => window.location.href = '/?page=province'}>
+                 onClick={() => window.location.href = '?page=province'}>
                 <FontAwesomeIcon icon={faChartPie} /> 
                 <div className={style.linkContent}>Province</div>
             </div>
             <div className={parsed.page == 'article' ? style.linkActive : style.link}
-                 onClick={() => window.location.href = '/?page=article'}>
+                 onClick={() => window.location.href = '?page=article'}>
                 <FontAwesomeIcon icon={faNewspaper} /> 
                 <div className={style.linkContent}>Article</div>
             </div>
