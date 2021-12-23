@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+
+* {
+  transition: .3s;
+}
+
+body {
+  margin: 0;
+  font-family: 'Kanit',-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif !important;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
+  background: rgb(27,43,95) !important;
+  background: linear-gradient(249deg, rgba(27,43,95,0.9839286056219363) 0%, rgba(55,82,139,1) 100%) !important;
+}
+
+.form-control{
+  margin-right: 20px;
+}
+
+.mdb-datatable{
+  background-color: #fff;
+  width: 90%;
+  height: fit-content;
+  margin: 0 auto;
+  border-radius: 20px;
+  box-shadow: 10px 10px 5px -7px rgba(0,0,0,0.33);
+  -webkit-box-shadow: 10px 10px 5px -7px rgba(0,0,0,0.33);
+  -moz-box-shadow: 10px 10px 5px -7px rgba(0,0,0,0.33);
+  margin-top: 30px;
+  overflow-x: scroll;
+}
+
+.bs-select{
+  color: black;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',monospace !important;
+}
+
+.table{
+  width: 98% !important;
+  margin: 0 auto;
+}
+
+.containerr{
+  display: grid;
+  grid-template-columns: 300px 1fr;
+}
+
+@media (max-width:650px){
+  .mdb-datatable{
+    width: 100vw;
+    border-radius: 0px;
+  }
+}
+
+@media (max-width:900px){
+  .containerr{
+    grid-template-columns: 1fr;
+  }
+}
